@@ -11,7 +11,7 @@
     --grey: #2e2f42;
     --white: #ffffff;
     --dairy: #fcfcfc;
-    --calc: var(team-list)
+
 }
 
 
@@ -36,7 +36,7 @@ img {
 body {
     font-family: Roboto, sans-serif;
     color: var(--slate);
-    font-style: Regular;
+    font-style: 'regular';
     font-size: 16px;
     line-height: 1.28;
     letter-spacing: 2%;
@@ -216,6 +216,14 @@ header {
     background-color: var(--navy-blue);
     text-align: center;
     padding: 188px 0 188px;
+    outline: solid 1px gray;
+    background-image: linear-gradient(to-right rgba(46, 47, 66, 0.7));
+    background-image: url(/images/Hero/people-office\ 1.jpg);
+    max-width: 1440px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .hero-title {
@@ -254,11 +262,14 @@ header {
 
 .hero-button:hover {
     background-color: var(--ocean);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:focus {
     background-color: var(--ocean);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 /* principles */
 .visualli-hidden {
@@ -279,6 +290,49 @@ header {
     width: calc((100% - 72px)/4);
 }
 
+.set-principle.icon-antenna::before {
+    content: "";
+    display: block;
+    height: 112px;
+    background-image: url(/images/icon/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
+
+.icon-clock::before {
+    content: "";
+    display: block;
+    height: 112px;
+    background-image: url(/images/icon/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
+
+.icon-vector::before {
+    content: "";
+    display: block;
+    height: 112px;
+    background-image: url(/images/icon/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
+
+.icon-astronaut::before {
+    content: "";
+    display: block;
+    height: 112px;
+    background-image: url(/images/icon/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
 
 .principles {
     padding: 120px 0 120px;
@@ -338,6 +392,9 @@ header {
 
 /*  Team*/
 
+.social {
+    display: flex;
+}
 
 .team-list {
     display: flex;
@@ -355,6 +412,7 @@ header {
     background-color: var(--white);
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-item {
@@ -393,6 +451,93 @@ header {
 
 }
 
+
+
+/* Customers */
+
+.our-customers {
+    text-align: center;
+    Font-family: Roboto;
+    font-size: Bold;
+    font-size: 36px;
+    Line-height: 40px;
+    Line-height: 95%;
+    Vertical-align: Top;
+    Letter-spacing: 2%;
+    color: var(--navy-blue);
+    margin-top: 120px;
+    padding-bottom: 72px;
+}
+
+.logo-company {
+    display: flex;
+    gap: 24px;
+    margin: auto;
+    padding-bottom: 120px;
+
+}
+
+.icon-ya-co {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/Logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.icon-tagline {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/customers/tagline.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.icon-company {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/customers/Logo-company.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.icon-foster-peters {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/customers/foster-peters.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.icon-brand {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/customers/brand.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.icon-tagline-company {
+    outline: solid var(--light-slate);
+    width: 168px;
+    height: 88px;
+    background-image: url(/images/icon/customers/tagline-company.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+
 /* Footer */
 
 
@@ -408,9 +553,6 @@ header {
     letter-spacing: 0.03em;
     font-weight: 800;
     text-transform: uppercase;
-
-
-
 }
 
 .logo {
