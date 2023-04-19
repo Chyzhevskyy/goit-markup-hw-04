@@ -216,9 +216,8 @@ header {
     background-color: var(--navy-blue);
     text-align: center;
     padding: 188px 0 188px;
-    outline: solid 1px gray;
-    background-image: linear-gradient(to-right rgba(46, 47, 66, 0.7));
-    background-image: url(/images/Hero/people-office\ 1.jpg);
+
+    background-image: linear-gradient(46, 47, 66, 07), url(/images/Hero/people-office\ 1.jpg);
     max-width: 1440px;
     margin: auto;
     background-size: cover;
@@ -290,48 +289,15 @@ header {
     width: calc((100% - 72px)/4);
 }
 
-.set-principle.icon-antenna::before {
-    content: "";
-    display: block;
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
     height: 112px;
-    background-image: url(/images/icon/antenna.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--cloud);
     border-radius: 4px;
-}
-
-.icon-clock::before {
-    content: "";
-    display: block;
-    height: 112px;
-    background-image: url(/images/icon/clock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--cloud);
-    border-radius: 4px;
-}
-
-.icon-vector::before {
-    content: "";
-    display: block;
-    height: 112px;
-    background-image: url(/images/icon/Vector.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--cloud);
-    border-radius: 4px;
-}
-
-.icon-astronaut::before {
-    content: "";
-    display: block;
-    height: 112px;
-    background-image: url(/images/icon/astronaut.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--cloud);
-    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .principles {
@@ -394,6 +360,9 @@ header {
 
 .social {
     display: flex;
+    gap: 24px;
+    padding-top: 8px;
+
 }
 
 .team-list {
@@ -401,6 +370,26 @@ header {
     gap: 24px;
 
 }
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris);
+
+
+
+}
+
+.social-link:hover {
+    background-color: var(--ocean);
+}
+
+
+
 
 
 .team {
@@ -412,6 +401,7 @@ header {
     background-color: var(--white);
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -469,77 +459,69 @@ header {
     padding-bottom: 72px;
 }
 
-.logo-company {
+.title-company {
     display: flex;
     gap: 24px;
-    margin: auto;
-    padding-bottom: 120px;
-
 }
 
-.icon-ya-co {
-    outline: solid var(--light-slate);
-    width: 168px;
-    height: 88px;
-    background-image: url(/images/icon/Logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-}
-
-.icon-tagline {
-    outline: solid var(--light-slate);
-    width: 168px;
-    height: 88px;
-    background-image: url(/images/icon/customers/tagline.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-}
 
 .icon-company {
-    outline: solid var(--light-slate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
-    background-image: url(/images/icon/customers/Logo-company.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-}
-
-.icon-foster-peters {
-    outline: solid var(--light-slate);
-    width: 168px;
-    height: 88px;
-    background-image: url(/images/icon/customers/foster-peters.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-}
-
-.icon-brand {
-    outline: solid var(--light-slate);
-    width: 168px;
-    height: 88px;
-    background-image: url(/images/icon/customers/brand.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-}
-
-.icon-tagline-company {
-    outline: solid var(--light-slate);
-    width: 168px;
-    height: 88px;
-    background-image: url(/images/icon/customers/tagline-company.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    border: 1px solid;
+    border-color: var(--light-slate);
+    margin-bottom: 120px;
     border-radius: 4px;
 }
 
 
 /* Footer */
 
+.social-item {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-top: 100px;
+    margin-left: 540px;
+    margin-bottom: 16px;
+
+
+
+
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: 540px;
+
+
+}
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--green);
+}
 
 
 .web-color {
@@ -615,7 +597,6 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 72px;
-
     gap: 24px;
 
 
@@ -634,13 +615,15 @@ footer {
 .button-filter-item:hover {
     background-color: var(--ocean);
     color: var(--white);
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-filter-item:focus {
     color: var(--white);
     background-color: var(--ocean);
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-filter-item {
@@ -664,6 +647,11 @@ footer {
 .set-item {
     width: calc((100% - 2*24px)/3);
 
+}
+
+.set-item:hover,
+.set-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .border {
