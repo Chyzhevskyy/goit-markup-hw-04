@@ -213,13 +213,13 @@ header {
 
 
 .hero-item {
-    background-color: var(--navy-blue);
     text-align: center;
     padding: 188px 0 188px;
-
-    background-image: linear-gradient(46, 47, 66, 07), url(/images/Hero/people-office\ 1.jpg);
+    background-color: var(--navy-blue);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/people-office.jpg);
     max-width: 1440px;
-    margin: auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
     background-size: cover;
     background-position: center;
 
@@ -473,37 +473,43 @@ header {
     height: 88px;
     border: 1px solid;
     border-color: var(--light-slate);
+    fill: var(--light-slate);
     margin-bottom: 120px;
     border-radius: 4px;
 }
 
+.icon-company:hover,
+.icon-company:focus {
+    border-color: var(--ocean);
+    fill: var(--ocean);
+}
+
+.icon-company:hover svg {}
 
 /* Footer */
 
 .social-item {
-    display: flex;
-    justify-content: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--white);
-    margin-top: 100px;
-    margin-left: 540px;
     margin-bottom: 16px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
 
-
-
-
+.social-container {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-social {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
-    margin-left: 540px;
-
+    justify-content: center;
+    margin-top: 140px;
 
 }
 
