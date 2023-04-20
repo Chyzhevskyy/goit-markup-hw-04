@@ -62,7 +62,7 @@ body {
 /* headder */
 .border-bottom {
     border-bottom: 1px solid var(--cornflower);
-
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -216,7 +216,7 @@ header {
     text-align: center;
     padding: 188px 0 188px;
     background-color: var(--navy-blue);
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/people-office.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -358,8 +358,14 @@ header {
 
 /*  Team*/
 
+.team-wrapper {
+    padding: 32px 0;
+}
+
+
 .social {
     display: flex;
+    justify-content: center;
     gap: 24px;
     padding-top: 8px;
 
@@ -379,12 +385,14 @@ header {
     height: 40px;
     border-radius: 50%;
     background-color: var(--iris);
-
-
-
 }
 
-.social-link:hover {
+.social-team-svg {
+    fill: var(--cloud);
+}
+
+.social-link:hover,
+.social-link:focus {
     background-color: var(--ocean);
 }
 
@@ -443,20 +451,24 @@ header {
 
 
 
-/* Customers */
+/* Company */
+
+.company {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .our-customers {
     text-align: center;
     Font-family: Roboto;
     font-size: Bold;
     font-size: 36px;
-    Line-height: 40px;
+    line-height: 1.1;
     Line-height: 95%;
     Vertical-align: Top;
     Letter-spacing: 2%;
     color: var(--navy-blue);
-    margin-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .title-company {
@@ -469,48 +481,66 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     border: 1px solid;
     border-color: var(--light-slate);
-    fill: var(--light-slate);
-    margin-bottom: 120px;
+    color: var(--light-slate);
     border-radius: 4px;
 }
 
-.icon-company:hover,
-.icon-company:focus {
-    border-color: var(--ocean);
-    fill: var(--ocean);
+.icon-svg-company {
+    fill: currentColor;
 }
 
-.icon-company:hover svg {}
+.icon-link:hover,
+.icon-link:focus {
+    border-color: var(--ocean);
+    color: var(--ocean);
+}
+
+
 
 /* Footer */
+
+.oll-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-container {
+    gap: 120px;
+}
 
 .social-item {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white);
     margin-bottom: 16px;
-    margin-top: 100px;
-    margin-left: 250px;
 }
 
-.social-container {
-    display: flex;
-    justify-content: center;
-}
+
+
 
 .footer-social {
     display: flex;
-    gap: 24px;
-    justify-content: center;
-    margin-top: 140px;
+    gap: 16px;
+}
 
+.footer-social-item {
+    width: 40px;
+    height: 40px;
 }
 
 .social-link-footer {
@@ -518,11 +548,16 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--iris);
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 
 }
+
+.footer-social-svg {
+    fill: var(--cloud);
+}
+
 
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -655,8 +690,12 @@ footer {
 
 }
 
-.set-item:hover,
-.set-item:focus {
+.link-item {
+    display: block;
+}
+
+.link-item:hover,
+.link-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
